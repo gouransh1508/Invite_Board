@@ -1,5 +1,7 @@
 import { useEffect } from 'react'
 import Chart from 'chart.js'
+import M from 'materialize-css'
+
 
 const Dashboard = () => {
     useEffect(() => {
@@ -40,6 +42,13 @@ const Dashboard = () => {
                 }
             }
         });
+
+            var elems = document.querySelector('#sidenav');
+            var instance = M.Sidenav.init(elems, {});
+
+        
+
+
     }, [])
 
     
@@ -52,7 +61,7 @@ const Dashboard = () => {
                 <div class="card  left col s12 m6">
                     <nav>
                         <div class="nav-wrapper grey">
-                            <a class="right nav-text brand-logo" href=" " >Your Events<i class="material-icons">calendar_today</i></a>
+                            <a class="navEve  nav-text brand-logo" href=" " >Your Events<i class="material-icons">calendar_today</i></a>
                             <ul id="nav-mobile" class="center hide-on-med-and-down">
                                 <li><a class="nav-text" href=" ">New Events</a></li>
                                 <li><a class="nav-text" href=" ">Events Revenue</a></li>
@@ -60,8 +69,18 @@ const Dashboard = () => {
                                 <li><a class="nav-text" href=" ">Active Events</a></li>
 
                             </ul>
+                            <ul class="sidenav naviiii" id="sidenav">
+                            <li><a class="nav-text" href=" ">New Events</a></li>
+                                <li><a class="nav-text" href=" ">Events Revenue</a></li>
+                                <li><a class="nav-text" href=" ">Past Events</a></li>
+                                <li><a class="nav-text" href=" ">Active Events</a></li>   
+</ul>
+<a href=" " data-target="sidenav" className="sidenav-trigger">
+                    <i className="material-icons">menu</i>
+                </a>
                         </div>
                     </nav>
+                    
                     <div class="card-image waves-effect waves-block waves-light">
                         <canvas id="myChart" width="400" height="160"></canvas>
                     </div>
@@ -73,11 +92,11 @@ const Dashboard = () => {
                         <p>Here is some more information about this product that is only revealed once clicked on.</p>
                     </div>
                 </div>
-                <div class="card cardii right col s6 m5">
-                    <div class="card-image waves-effect waves-block waves-light center">
-                        <div className="row center">
-                            <div class=" col s12 m4">
-                                <i class="small material-icons">perm_identity</i>
+                <div class="card waveiii right col s6 m5 ">
+                    <div class=" waveiii card-image waves-effect waves-block waves-light center">
+                        <div className=" row center">
+                            <div class="col s12 m4">
+                                <i class="small iiii material-icons">perm_identity</i>
                                 <br />
                                 <p>All Users</p>
                                 <p class='blue-text flow-text'>11000</p>
@@ -160,38 +179,38 @@ const Dashboard = () => {
                             <ul class="collection">
                                 <li class="collection-item avatar">
                                     <i class="material-icons circle">insert_chart</i>
-                                    <span class="title">Event Blog 1</span>
-                                    <p>Management <br />
+                                    <span class="title txtmm">Event Blog 1</span>
+                                    <p class='textp'>Management <br />
                                     </p>
-                                    <a href=" " class="secondary-content"><i class="material-icons">grade</i></a>
+                                    <a href=" " class="secondary-content"><i class="ggg material-icons">grade</i></a>
                                 </li>
                                 <li class="collection-item avatar">
                                     <i class="material-icons circle">insert_chart</i>
-                                    <span class="title">Event Blog 2</span>
-                                    <p>Decoration <br />
+                                    <span class="title txtmm">Event Blog 2</span>
+                                    <p class='textp'>Decoration <br />
                                     </p>
-                                    <a href=" " class="secondary-content"><i class="material-icons">grade</i></a>
+                                    <a href=" " class="secondary-content"><i class="ggg material-icons">grade</i></a>
                                 </li>
                                 <li class="collection-item avatar">
                                     <i class="material-icons circle green">insert_chart</i>
-                                    <span class="title">Event Blog 3</span>
-                                    <p>Catering <br />
+                                    <span class="title txtmm">Event Blog 3</span>
+                                    <p class='textp'>Catering <br />
                                     </p>
-                                    <a href=" " class="secondary-content"><i class="material-icons">grade</i></a>
+                                    <a href=" " class="secondary-content"><i class="ggg material-icons">grade</i></a>
                                 </li>
                                 <li class="collection-item avatar">
                                     <i class="material-icons circle red">insert_chart</i>
-                                    <span class="title">Event Blog 4</span>
-                                    <p>Security <br />
+                                    <span class="title txtmm">Event Blog 4</span>
+                                    <p class='textp'>Security <br />
                                     </p>
-                                    <a href=" " class="secondary-content"><i class="material-icons">grade</i></a>
+                                    <a href=" " class="secondary-content"><i class="ggg material-icons">grade</i></a>
                                 </li>
                             </ul>
                         </div>
 
                     </div>
                 </div>
-                <div class="col s6 m3">
+                <div class=" col s6 m3 ">
                     <div class="card  darken-1">
                         <div class="card-content white-black">
                             <span class="card-title bb"><i class="left small material-icons">timeline</i>Events Logs</span>
@@ -199,9 +218,9 @@ const Dashboard = () => {
                             <ul class="collection">
                                 <li class="collection-item avatar">
                                     <i class="material-icons circle">vpn_key</i>
-                                    <span class="title left">HUBX</span>
+                                    <span class="title left txtmm">HUBX</span>
                                     <br />
-                                    <p class="left">Logged In <br />
+                                    <p class="left txtmm">Logged In <br />
                                     </p>
                                     <a href=" " class="secondary-content txtsm">22 Minutes</a>
                                 </li>

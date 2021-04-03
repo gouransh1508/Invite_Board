@@ -37,4 +37,50 @@ font-size: 11px;
   padding-left: 5px;
   font-weight: bolder;
 }
+  .navDash{
+    display: none !important;
+  }
+  .navEve{
+    margin-left:100px !important;
+  }
 
+
+@media only screen
+and (max-width : 480px) {
+
+
+.ggg{
+  display:none
+}
+.waveiii{
+  width:400px !important;
+}
+.textp{
+  font-size:10px !important;
+  font-weight: bold !important;
+  margin-left: -30px !important;
+}
+.txtsm{
+  margin-top:50px !important;
+  font-weight: bold !important;
+}
+.navDash{
+  display: block !important;
+}
+.navEve{
+  margin-left: -5px !important;
+}
+.inviteii{
+  background-color:red !important;
+}
+.shiftii{
+  height:600px !important;
+  width:425px !important;
+}
+.txtmm{
+  margin-left:-10px !important;
+  font-size:12px !important;
+}
+
+
+}

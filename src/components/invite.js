@@ -106,7 +106,7 @@ const Invite = () => {
                         <p>Here is some more information about this product that is only revealed once clicked on.</p>
                     </div>
                 </div>
-                <div class="card right col s6 m5">
+                <div class="card shiftii right col s6 m5 ">
                     <form id='EventForm' style={{ paddingTop: '20px' }} noValidate onSubmit={onSubmit}>
                         <div className="input-field col s12">
                             <input
